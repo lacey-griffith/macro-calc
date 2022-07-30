@@ -19,7 +19,28 @@
 <body>
     <header>
     </header>
-    <section class='content'></section>
+    <section class='content'>
+        <div class="content-outer">
+            <div class="content-inner">
+                <div>
+                    <div id="current_weight" class="calc-item">
+                        <input type="text" name="current_weight" placeholder="weight (lbs)">
+                    </div>
+                    <div id="goal_weight" class="calc-item">
+                        <input type="text" name="goal_weight" placeholder="goal weight (lbs)">
+                    </div>
+                    <div id="activity" class="calc-item">
+                        <span class="activity-level" data-trigger="light" value="13">Light</span>
+                        <span class="activity-level" data-trigger="moderate" value="14">Moderate</span>
+                        <span class="activity-level" data-trigger="light" value="15">Heavy</span>
+                    </div>
+                    <div id="age" class="calc-item">
+                        <input type="text" name="age">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
