@@ -71,10 +71,11 @@ section.content {
 
 .calc-item {
     margin-top: 30px;
+    position: relative;
 }
 
 .calc-item label {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     flex: 100%;
     text-align: center;
 }
@@ -96,10 +97,18 @@ span.activity-level {
     background-color: #37CCBD;
 }
 
+.error {
+    display: none;
+    position: absolute;
+    top: 22px;
+    font-size: 12px;
+    color: #a13e3e;
+}
+
 #activity h6 {
     flex: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .results_body {
     display: none;
@@ -107,4 +116,15 @@ span.activity-level {
 
 .results_body.show {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    margin: 20px auto;
+    background-color: #A7A2A9;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.results_body div {
+   flex: 100%; 
 }

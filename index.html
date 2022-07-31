@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>macro calculator</title>
 </head>
@@ -29,14 +28,17 @@
                 <div class="content-wrapper">
                     <div id="current_weight" class="calc-item">
                         <label for="current_weight">what is your current weight?</label>
+                        <span class="error">please enter your current weight!</span>
                         <input type="number" name="current_weight" placeholder="weight (lbs)">
                     </div>
                     <div id="goal_weight" class="calc-item">
                         <label for="goal_weight">what is your goal weight?</label>
+                        <span class="error">please enter a goal weight!</span>
                         <input type="number" name="goal_weight" placeholder="goal weight (lbs)">
                     </div>
                     <div id="activity" class="calc-item">
                         <h6>how is your activity level?</h6>
+                        <span class="error">*you must select an option!*</span>
                         <span class="activity-level" data-trigger="light" value="12">light (0-2 workouts/week)</span>
                         <span class="activity-level" data-trigger="moderate" value="13">moderate (3-4 workouts/week)</span>
                         <span class="activity-level" data-trigger="light" value="14">heavy (5-6 workouts/week)</span>
@@ -44,7 +46,12 @@
                 </div>
                 <button class="calc-cta">calculate</button>
             </div>
-            <div class="results_body"></div>
+            <div class="results_body">
+                <div>daily calorie goal: <span class="cal_result"></span></div>
+                <div>protein: <span class="protein_result"></span></div>
+                <div>fat: <span class="fat_result"></span></div>
+                <div>carbs: <span class="carb_result"></span></div>
+            </div>
         </div>
     </section>
 
