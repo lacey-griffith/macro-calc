@@ -18,27 +18,33 @@
 </head>
 <body>
     <header>
+            <div class="header-wrapper">
+                <div>macro calculator</div>
+                <div>resources</div>
+            </div>
     </header>
     <section class='content'>
         <div class="content-outer">
-            <div class="content-inner">
-                <div>
+            <div class="calculater-body">
+                <div class="content-wrapper">
                     <div id="current_weight" class="calc-item">
-                        <input type="text" name="current_weight" placeholder="weight (lbs)">
+                        <label for="current_weight">what is your current weight?</label>
+                        <input type="number" name="current_weight" placeholder="weight (lbs)">
                     </div>
                     <div id="goal_weight" class="calc-item">
-                        <input type="text" name="goal_weight" placeholder="goal weight (lbs)">
+                        <label for="goal_weight">what is your goal weight?</label>
+                        <input type="number" name="goal_weight" placeholder="goal weight (lbs)">
                     </div>
                     <div id="activity" class="calc-item">
-                        <span class="activity-level" data-trigger="light" value="13">Light</span>
-                        <span class="activity-level" data-trigger="moderate" value="14">Moderate</span>
-                        <span class="activity-level" data-trigger="light" value="15">Heavy</span>
-                    </div>
-                    <div id="age" class="calc-item">
-                        <input type="text" name="age">
+                        <h6>how is your activity level?</h6>
+                        <span class="activity-level" data-trigger="light" value="12">light (0-2 workouts/week)</span>
+                        <span class="activity-level" data-trigger="moderate" value="13">moderate (3-4 workouts/week)</span>
+                        <span class="activity-level" data-trigger="light" value="14">heavy (5-6 workouts/week)</span>
                     </div>
                 </div>
+                <button class="calc-cta">calculate</button>
             </div>
+            <div class="results_body"></div>
         </div>
     </section>
 

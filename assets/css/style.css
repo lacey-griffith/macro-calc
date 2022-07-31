@@ -1,0 +1,110 @@
+/*
+ #37CCBD teal
+ #08090A black
+ #A7A2A9 silver
+ #575A5E dark gray
+ #222823 jungle green
+*/
+
+header {
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+    padding: 20px 0 0;
+    background-color: #37CCBD;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+}
+
+section.content {
+    padding-top: 100px;
+}
+
+.calculater-body {
+    background-color: #A7A2A9;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.content .content-outer {
+    max-width: 450px;
+    margin: auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calculater-body button.calc-cta {
+    font-size: 20px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    color: #fafafa;
+    background-color: #08090A;
+}
+
+#current_weight, 
+#goal_weight {
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#activity {
+    flex-basis: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calc-item {
+    margin-top: 30px;
+}
+
+.calc-item label {
+    margin-bottom: 10px;
+    flex: 100%;
+    text-align: center;
+}
+
+span.activity-level:first-of-type {
+    margin-top: 0px;
+}
+
+span.activity-level {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#activity span.activity-level.active {
+    background-color: #37CCBD;
+}
+
+#activity h6 {
+    flex: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.results_body {
+    display: none;
+}
+
+.results_body.show {
+    display: flex;
+}
